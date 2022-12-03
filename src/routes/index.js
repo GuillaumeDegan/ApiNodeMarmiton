@@ -1,8 +1,11 @@
 import express from "express";
+import recipesRoutes from "./recipes";
+import usersRoutes from "./users";
 
 const router = express.Router();
 
-// routes à importer ici
-// sous la forme de router.use(nom de la route);
+router.use(recipesRoutes);
+
+router.use(usersRoutes);
 
 export default router;
