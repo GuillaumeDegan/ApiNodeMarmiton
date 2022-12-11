@@ -13,7 +13,7 @@ const recipesSchema = new mongoose.Schema({
   // id utilisateur ( createur de la recette ) a confirmer en fonction de comment sa marche sur mongodb
   id_user: {
     required: true,
-    type: Number,
+    type: String,
   },
   //nb perssone
   servings: {
