@@ -10,7 +10,7 @@ const recipesSchema = new mongoose.Schema({
     required: true,
     type: String,
   },
-  // id utilisateur ( createur de la recette ) a confirmer en fonction de comment sa marche sur mongodb
+  // id utilisateur ( createur de la recette )
   id_user: {
     required: true,
     type: String,
@@ -24,7 +24,7 @@ const recipesSchema = new mongoose.Schema({
     required: true,
     type: String,
   },
-  //etapes
+  //etapes de préparation
   steps: {
     required: true,
     type: String,
